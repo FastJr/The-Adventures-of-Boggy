@@ -10,7 +10,6 @@ config_version=5
 
 [application]
 
-config/name="TheAdventuresOfBoggy"
 config/name="The Adventures of Boggy"
 run/main_scene="res://main_scene.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
