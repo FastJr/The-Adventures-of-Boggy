@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1706499325
+boggy.gd::GDScript::-1::1706499224::0::1::::<>CharacterBody2D<>::
+boggy.tres::SpriteFrames::8060041747559868944::1706499224::0::1::::<><>::uid://ppg58xrcw6fu::::res://BoggyIdle1.png<>uid://bmpb0xkm2g878::::res://BoggyIdle2.png<>uid://w5x05yvlwv85::::res://BoggyMove1.png<>uid://cr0quy0n1tprv::::res://BoggyJump.png<>uid://brx6dig00lq1r::::res://BoggyMove2.png
+boggy.tscn::PackedScene::4253326774352216309::1706499224::0::1::::<><>::res://boggy.gd<>uid://dm3lye0wrn6a3::::res://boggy.tres
+BoggyIdle1.png::CompressedTexture2D::1084217966232159978::1706499224::1706499263::1::::<><>::
+BoggyIdle2.png::CompressedTexture2D::3259759059567453893::1706499224::1706499263::1::::<><>::
+BoggyJump.png::CompressedTexture2D::6018669640653292203::1706499224::1706499263::1::::<><>::
+BoggyMove1.png::CompressedTexture2D::1607528642085300820::1706499224::1706499263::1::::<><>::
+BoggyMove2.png::CompressedTexture2D::3628999728665874893::1706499224::1706499263::1::::<><>::
+icon.svg::CompressedTexture2D::7392698080887459511::1706499224::1706499263::1::::<><>::
+long_platform.tscn::PackedScene::3629594949968146248::1706499224::0::1::::<><>::uid://bj5dtwtqgsmvj::::res://platform.png
+main_scene.tscn::PackedScene::8773017939147555812::1706499267::0::1::::<><>::uid://b1ulw2fqp63kj::::res://boggy.tscn<>uid://bryg5sybmf7yq::::res://long_platform.tscn<>uid://jnkkro6navy4::::res://short_platform.tscn
+platform.png::CompressedTexture2D::3080268875720372147::1706499224::1706499263::1::::<><>::
+short_platform.tscn::PackedScene::659162447361892049::1706499224::0::1::::<><>::uid://bj5dtwtqgsmvj::::res://platform.png
