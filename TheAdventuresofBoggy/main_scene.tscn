@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw8ylag4bk5wa"]
+
+[ext_resource type="PackedScene" uid="uid://b1ulw2fqp63kj" path="res://boggy.tscn" id="1_cfext"]
+[ext_resource type="PackedScene" uid="uid://bryg5sybmf7yq" path="res://long_platform.tscn" id="2_hyhfk"]
+[ext_resource type="PackedScene" uid="uid://jnkkro6navy4" path="res://short_platform.tscn" id="3_0ptwx"]
+
+[node name="main_scene" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_cfext")]
+position = Vector2(47, 575)
+
+[node name="long_platform" parent="." instance=ExtResource("2_hyhfk")]
+position = Vector2(572, 635)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("3_0ptwx")]
+position = Vector2(430, 565)
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("3_0ptwx")]
+position = Vector2(587, 522)
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("3_0ptwx")]
+position = Vector2(734, 562)

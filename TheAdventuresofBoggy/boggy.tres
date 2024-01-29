@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://dm3lye0wrn6a3"]
+
+[ext_resource type="Texture2D" uid="uid://ppg58xrcw6fu" path="res://BoggyIdle1.png" id="1_p7swh"]
+[ext_resource type="Texture2D" uid="uid://bmpb0xkm2g878" path="res://BoggyIdle2.png" id="2_5vtn3"]
+[ext_resource type="Texture2D" uid="uid://w5x05yvlwv85" path="res://BoggyMove1.png" id="3_2qy0v"]
+[ext_resource type="Texture2D" uid="uid://cr0quy0n1tprv" path="res://BoggyJump.png" id="3_mc430"]
+[ext_resource type="Texture2D" uid="uid://brx6dig00lq1r" path="res://BoggyMove2.png" id="4_ra3cv"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p7swh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5vtn3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_mc430")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2qy0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ra3cv")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]

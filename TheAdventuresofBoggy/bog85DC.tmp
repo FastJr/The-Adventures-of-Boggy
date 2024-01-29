@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1ulw2fqp63kj"]
+
+[ext_resource type="Texture2D" uid="uid://ppg58xrcw6fu" path="res://BoggyIdle1.png" id="1_pkeon"]
+[ext_resource type="Script" path="res://boggy.gd" id="1_w8ebm"]
+[ext_resource type="Texture2D" uid="uid://bmpb0xkm2g878" path="res://BoggyIdle2.png" id="3_npy8g"]
+[ext_resource type="Texture2D" uid="uid://w5x05yvlwv85" path="res://BoggyMove1.png" id="4_y1jls"]
+[ext_resource type="Texture2D" uid="uid://brx6dig00lq1r" path="res://BoggyMove2.png" id="5_3xokv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcra5"]
+size = Vector2(85, 93.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tqxhy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pkeon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_npy8g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_y1jls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3xokv")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(449, 319)
+motion_mode = 1
+script = ExtResource("1_w8ebm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.625)
+shape = SubResource("RectangleShape2D_fcra5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, 1)
+sprite_frames = SubResource("SpriteFrames_tqxhy")
+animation = &"idle"
